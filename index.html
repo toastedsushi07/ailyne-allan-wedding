@@ -1,342 +1,480 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>The Wedding of Allan & Ailyne</title>
-    
-    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&family=Great+Vibes&family=Montserrat:wght@300;400;600&display=swap" rel="stylesheet">
-    
-    <link rel="stylesheet" href="index.css">
-    <script src="https://unpkg.com/lucide@latest"></script>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>The Wedding of Allan & Ailyne</title>
+
+<!-- Google Fonts -->
+<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&family=Great+Vibes&family=Montserrat:wght@300;400;600&display=swap" rel="stylesheet">
+
+<!-- Bootstrap -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+
+<!-- Custom CSS -->
+<link rel="stylesheet" href="index.css">
+
 </head>
 <body>
 
-    <nav>
-        <div class="nav-logo">THE WEDDING OF AILYNE & ALLAN</div>
-        <ul class="nav-links">
-            <li><a href="#home">Home</a></li>
-            <li><a href="#entourage">Entourage</a></li>
-            <li><a href="#dresscode">Dress Code</a></li>
-            <li><a href="#location">Location</a></li>
-            <li><a href="#timeline">Timeline</a></li>
-            <li><a href="#FAQs">FAQs</a></li>
-            <li><a href="#rsvp">RSVP</a></li>
-            <li><a href="#gallery">Gallery</a></li>
-        </ul>
-    </nav>
+<!-- NAVBAR -->
+<nav class="navbar navbar-expand-lg bg-white sticky-top border-bottom">
+  <div class="container">
+    <a class="navbar-brand fw-bold" href="#">ALLAN & AILYNE</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navMenu">
+      <ul class="navbar-nav ms-auto text-center">
+        <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
+        <li class="nav-item"><a class="nav-link" href="#entourage">Entourage</a></li>
+        <li class="nav-item"><a class="nav-link" href="#dresscode">Dress Code</a></li>
+        <li class="nav-item"><a class="nav-link" href="#location">Location</a></li>
+        <li class="nav-item"><a class="nav-link" href="#timeline">Timeline</a></li>
+        <li class="nav-item"><a class="nav-link" href="#faqs">FAQs</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
 
-    <header id="home" class="hero">
+<!-- HERO -->
+<header id="home" class="text-center py-5 container">
+    <p class="sub-header">TOGETHER WITH THEIR FAMILIES</p>
+    <h1 class="main-names">ALLAN & AILYNE</h1>
 
-        <div id="countdown" class="countdown-container">
-    <div class="time-box"><span id="days">00</span><p>Days</p></div>
-    <div class="time-box"><span id="hours">00</span><p>Hours</p></div>
-    <div class="time-box"><span id="minutes">00</span><p>Min</p></div>
-    <div class="time-box"><span id="seconds">00</span><p>Sec</p></div>
+    <div id="countdown" class="d-flex justify-content-center gap-4 my-4">
+        <div><span id="days">00</span><p>Days</p></div>
+        <div><span id="hours">00</span><p>Hours</p></div>
+        <div><span id="minutes">00</span><p>Min</p></div>
+        <div><span id="seconds">00</span><p>Sec</p></div>
+    </div>
+
+    <p class="invite-text">Invites you to celebrate their wedding</p>
+    <h2 class="venue-name">PALACIO CRISTAL DEL AQUILA</h2>
+    <p class="venue-address">Tagaytay City</p>
+</header>
+
+<!-- CAROUSEL -->
+<section class="container my-5">
+<div id="weddingCarousel" class="carousel slide" data-bs-ride="carousel" data-bs-interval="4000">
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img src="1.jpg" class="d-block w-100" alt="Slide 1">
+    </div>
+    <div class="carousel-item">
+      <img src="2.jpg" class="d-block w-100" alt="Slide 2">
+    </div>
+    <div class="carousel-item">
+      <img src="3.jpg" class="d-block w-100" alt="Slide 3">
+    </div>
+  </div>
+  <button class="carousel-control-prev" type="button" data-bs-target="#weddingCarousel" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#weddingCarousel" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+  </button>
 </div>
+</section>
 
-        <p class="sub-header">TOGETHER WITH THEIR FAMILIES</p>
-        <h1 class="main-names">ALLAN & AILYNE</h1>
-        <p class="invite-text">Invites you to celebrate their wedding</p>
+<!-- ENTOURAGE -->
+<section id="entourage" class="container py-5 text-center">
+    <h2 class="section-title mb-5">THE ENTOURAGE</h2>
 
-        <div class="date-container">
-            <div class="date-side">SUNDAY</div>
-            <div class="date-main">
-                <span class="month">APRIL</span>
-                <span class="day">19</span>
-                <span class="year">2026</span>
-            </div>
-            <div class="date-side">AT 3:30 PM</div>
+    <!-- Bride & Groom -->
+    <div class="row mb-4">
+        <div class="col-md-6">
+            <p class="role-title">Groom</p>
+            <p class="person-name">Allan Robert Ventura</p>
+        </div>
+        <div class="col-md-6">
+            <p class="role-title">Bride</p>
+            <p class="person-name">Ailyne Marasigan</p>
+        </div>
+    </div>
+
+    <!-- Parents -->
+    <div class="row mb-5">
+        <div class="col-md-6">
+            <p class="role-title">Parents of the Groom</p>
+            <p class="person-name">Mr. Jose Ventura & Mrs. Arlyn Cumming</p>
+        </div>
+        <div class="col-md-6">
+            <p class="role-title">Parents of the Bride</p>
+            <p class="person-name">Mr. Eliazar & Mrs. Erlinda Marasigan</p>
+        </div>
+    </div>
+
+    <hr class="my-5">
+
+    <!-- Principal Sponsors -->
+    <p class="role-title mt-5">Principal Sponsors</p>
+    <p class="script-subtitle mb-4">To provide spiritual guidance</p>
+
+    <div class="row justify-content-center text-center">
+        <div class="col-lg-5 col-md-8 col-sm-10 mb-3">
+            <p>Hon. Humerlito “Bonz” Atienza Dolor</p>
+            <p>Col. Dennis Gutierrez</p>
+            <p>Dr. Marpheo Marasigan</p>
+            <p>Dr. Juan Chichos Ventura</p>
+            <p>Mr. Giuseppe Caviglia</p>
+            <p>Mr. Antonio Caviglia</p>
+            <p>Mr. Destry Vista</p>
+            <p>Mr. Giuseppe Leone</p>
+            <p>Mr. Alexander Pecson</p>
+            <p>Mr. Barry Anthony Matilde Yapchulay</p>
+            <p>Mr. Bartolome Marasigan Jr.</p>
+            <p>Mr. Jerry Akia</p>
+            <p>Mr. Alexander Noel Taylor</p>
+            <p>Mr. Michael Goodwin</p>
+            <p>Mr. Joenel Torricer</p>
+            <p>Mr. Michael Jumig</p>
+            <p>Mr. Joel Ricardo</p>
         </div>
 
-        <h2 class="venue-name">PALACIO CRISTAL DEL AQUILA</h2>
-        <p class="venue-address">Happy Rd, Kaybagal South, Tagaytay City</p>
-        
-        <p class="script-text">Reception to follow</p>
-    </header>
-
-    <section id="entourage" class="entourage">
-        <h2 class="section-title">THE ENTOURAGE</h2>
-
-        <div class="flex-row">
-            <div class="member-group">
-                <p class="role-title">Groom</p>
-                <p class="person-name">Allan Robert Ventura</p>
-            </div>
-            <div class="member-group">
-                <p class="role-title">Bride</p>
-                <p class="person-name">Ailyne Marasigan</p>
-            </div>
+        <div class="col-lg-5 col-md-8 col-sm-10 mb-3">
+            <p>Mrs. Hiyas Dolor</p>
+            <p>Mrs. Marichu Marasigan</p>
+            <p>Dr. Deborah Morillo-Marasigan</p>
+            <p>Ms. Maria Rosario Ventura</p>
+            <p>Mrs. Monica Bresciani</p>
+            <p>Ms. Roberta Rivetti</p>
+            <p>Atty. Guyla Vista</p>
+            <p>Mrs. Rosalina Manuel</p>
+            <p>Mrs. Rossana Borsadoli</p>
+            <p>Mrs. Maria Theresa Escaño</p>
+            <p>Ms. Jeannie T. Designaño</p>
+            <p>Mrs. Yolanda Akia</p>
+            <p>Mrs. Miralie Taylor</p>
+            <p>Mrs. Reyna Goodwin</p>
+            <p>Mrs. Mary Grace Cipriano</p>
+            <p>Mrs. Maria Zorayda Tizon</p>
+            <p>Mrs. Virginia Cabral</p>
         </div>
+    </div>
 
-        <div class="flex-row">
-            <div class="member-group">
-                <p class="role-title">Parents of the Groom</p>
-                <p class="person-name">Mr. Jose Ventura & Mrs. Arlyn Cumming</p>
-            </div>
-            <div class="member-group">
-                <p class="role-title">Parents of the Bride</p>
-                <p class="person-name">Mr. Eliazar & Mrs. Erlinda Marasigan</p>
-            </div>
+    <hr class="my-5">
+
+    <!-- Best Man & Maid of Honor -->
+    <div class="row mb-4">
+        <div class="col-md-6">
+            <p class="role-title">Best Man</p>
+            <p class="person-name">Mr. Mark Jay Malazo</p>
         </div>
-
-        <div class="divider"></div>
-
-        <p class="role-title">Principal Sponsors</p>
-        <p class="script-subtitle">To provide spiritual guidance</p>
-        
-        <div class="sponsor-grid">
-            <div class="sponsor-col">
-                <p>Hon. Humerlito “Bonz” Atienza Dolor</p>
-                <p>Col. Dennis Gutierrez</p>
-                <p>Dr. Marpheo Marasigan</p>
-                <p>Dr. Juan Chichos Ventura</p>
-                <p>Mr. Giuseppe Caviglia</p>
-                <p>Mr. Antonio Caviglia</p>
-                <p>Mr. Destry Vista</p>
-                <p>Mr. Giuseppe Leone</p>
-                <p>Mr. Alexander Pecson</p>
-                <p>Mr. Barry Anthony Matilde Yapchulay</p>
-                <p>Mr. Bartolome Marasigan Jr.</p>
-                <p>Mr. Jerry Akia</p>
-                <p>Mr. Alexander Noel Taylor</p>
-                <p>Mr. Michael Goodwin</p>
-                <p>Mr. Joenel Torricer</p>
-                <p>Mr. Michael Jumig</p>
-                <p>Mr. Joel Ricardo</p>
-            </div>
-            <div class="sponsor-col">
-                <p>Mrs. Hiyas Dolor</p>
-                <p>Mrs. Marichu Marasigan</p>
-                <p>Dr. Deborah Morillo-Marasigan</p>
-                <p>Ms. Maria Rosario Ventura</p>
-                <p>Mrs. Monica Bresciani</p>
-                <p>Ms. Roberta Rivetti</p>
-                <p>Atty. Guyla Vista</p>
-                <p>Mrs. Rosalina Manuel</p>
-                <p>Mrs. Rossana Borsadoli</p>
-                <p>Mrs. Maria Theresa Escaño</p>
-                <p>Ms. Jeannie T. Designaño</p>
-                <p>Mrs. Yolanda Akia</p>
-                <p>Mrs. Miralie Taylor</p>
-                <p>Mrs. Reyna Goodwin</p>
-                <p>Mrs. Mary Grace Cipriano</p>
-                <p>Mrs. Maria Zorayda Tizon</p>
-                <p>Mrs. Virginia Cabral</p>
-            </div>
+        <div class="col-md-6">
+            <p class="role-title">Maid of Honor</p>
+            <p class="person-name">Ms. Karla Bernadyne Lanuza</p>
         </div>
+    </div>
 
-        <div class="divider"></div>
-
-        <div class="flex-row">
-            <div class="secondary-group">
-                <p class="role-title">Best Man</p>
-                <p class="person-name">Mr. Mark Jay Malazo</p>
-            </div>
-            <div class="secondary-group">
-                <p class="role-title">Maid of Honor</p>
-                <p class="person-name">Ms. Karla Bernadyne Lanuza</p>
-            </div>
+    <!-- Secondary Sponsors -->
+    <div class="row mb-4">
+        <div class="col-md-4">
+            <p class="role-title">Candle Sponsors</p>
+            <p class="person-name">Mr. Thierre Chua<br>Ms. Krizha Joiccine Vista</p>
         </div>
-
-        <div class="flex-row secondary-row">
-            <div class="secondary-group">
-                <p class="role-title">Candle Sponsors</p>
-                <p class="person-name">Mr. Thierre Chua<br>Ms. Krizha Joiccine Vista</p>
-            </div>
-            <div class="secondary-group">
-                <p class="role-title">Veil Sponsors</p>
-                <p class="person-name">Mr. Allan Norman Diokno<br>Mrs. Mary Queen Tumbaga</p>
-            </div>
-            <div class="secondary-group">
-                <p class="role-title">Cord Sponsors</p>
-                <p class="person-name">Mr. Reymond Diestro<br>Mrs. Jasmine Ventura-Diestro</p>
-            </div>
+        <div class="col-md-4">
+            <p class="role-title">Veil Sponsors</p>
+            <p class="person-name">Mr. Allan Norman Diokno<br>Mrs. Mary Queen Tumbaga</p>
         </div>
-
-        <div class="flex-row secondary-row">
-            <div class="secondary-group">
-                <p class="role-title">Groomsmen</p>
-                <p class="person-name">Mr. Jericho Marasigan<br>Mr. Gian Carlo Delapena<br>Mr. Julius Ceasar Ramos<br>Mr. John Luis Ventura</p>
-            </div>
-            <div class="secondary-group">
-                <p class="role-title">Bridesmaids</p>
-                <p class="person-name">Dr. Mary Martha Marasigan<br>Ms. Mishell Dalisay<br>Ms. Maria Karla Lilia Esperanza<br>Ms. Jennel Nica Manuel</p>
-            </div>
+        <div class="col-md-4">
+            <p class="role-title">Cord Sponsors</p>
+            <p class="person-name">Mr. Reymond Diestro<br>Mrs. Jasmine Ventura-Diestro</p>
         </div>
+    </div>
 
-        <div class="final-roles">
+    <!-- Groomsmen & Bridesmaids -->
+    <div class="row mb-4">
+        <div class="col-md-6">
+            <p class="role-title">Groomsmen</p>
+            <p class="person-name">
+                Mr. Jericho Marasigan<br>
+                Mr. Gian Carlo Delapena<br>
+                Mr. Julius Ceasar Ramos<br>
+                Mr. John Luis Ventura
+            </p>
+        </div>
+        <div class="col-md-6">
+            <p class="role-title">Bridesmaids</p>
+            <p class="person-name">
+                Dr. Mary Martha Marasigan<br>
+                Ms. Mishell Dalisay<br>
+                Ms. Maria Karla Lilia Esperanza<br>
+                Ms. Jennel Nica Manuel
+            </p>
+        </div>
+    </div>
+
+    <!-- Final Roles -->
+    <div class="row">
+        <div class="col-md-6">
             <p class="role-title">Bible Reader</p>
             <p class="person-name">Mr. George Cumming</p>
-
+        </div>
+        <div class="col-md-6">
             <p class="role-title">Flower Court</p>
-            <p class="person-name">Mrs. Faye Ventura-Vista<br>Mrs. Rosalie Baril-Ventura<br>Ms. Rowena Gasga</p>
+            <p class="person-name">
+                Mrs. Faye Ventura-Vista<br>
+                Mrs. Rosalie Baril-Ventura<br>
+                Ms. Rowena Gasga
+            </p>
         </div>
-    </section>
+    </div>
 
-    <section id="location" class="location-section">
-    <h2 class="section-title">THE LOCATION</h2>
+</section>
+
+<section id="dresscode" class="dresscode-section">
+    <div class="container dresscode-wrapper">
+        <div class="row h-100 align-items-center">
+            
+            <div class="col-md-6 col-sm-12 left-motif text-center">
+                <h2 class="motif-title">Color Motif</h2>
+                <h3 class="all-guests-title mt-4">ALL GUESTS:</h3>
+                <h4 class="champagne-subtitle mb-4">Champagne Sunshine</h4>
+                
+                <div class="color-palette d-flex justify-content-center gap-3">
+                    <span class="color-swatch gold-1"></span>
+                    <span class="color-swatch gold-2"></span>
+                    <span class="color-swatch gold-3"></span>
+                    <span class="color-swatch gold-4"></span>
+                    <span class="color-swatch gold-5"></span>
+                </div>
+                
+                <p class="dresscode-text mt-4">We kindly ask that you follow our dress code theme and avoid wearing white.</p>
+            </div>
+
+           <div class="col-md-6 col-sm-12 right-motif text-center">
+    <h3 class="sponsors-title mb-5">PRINCIPAL SPONSORS ONLY</h3>
     
-<div class="map-container">
-    <iframe 
-        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3868.530656002011!2d120.92868327583648!3d14.099758689938803!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x33bd77e32096ada9%3A0xe518a182b415f194!2sPalacio%20Cristal%20Del%20AQUILA!5e0!3m2!1sen!2sph!4v1710000000000!5m2!1sen!2sph" 
-        width="100%" 
-        height="450" 
-        style="border:0;" 
-        allowfullscreen="" 
-        loading="lazy" 
-        referrerpolicy="no-referrer-when-downgrade">
-    </iframe>
+    <div class="sponsor-group mb-5">
+        <p class="role-text mb-1">GENTLEMEN</p>
+        <p class="script-color mb-3">Black</p>
+        <div class="d-flex justify-content-center mb-3">
+            <span class="color-swatch sponsor-black"></span>
+        </div>
+        <p class="special-note">To male principal sponsors, We will provide your necktie on the day.</p>
+    </div>
+    
+    <div class="sponsor-group">
+        <p class="role-text mb-1">LADIES</p>
+        <p class="script-color mb-3">Gray or Silver</p>
+        <div class="d-flex justify-content-center gap-2">
+            <span class="color-swatch sponsor-gray-light"></span>
+            <span class="color-swatch sponsor-gray-dark"></span>
+        </div>
+    </div>
 </div>
-        
-        <div class="location-details">
-            <p>Our ceremony and reception will both be held at this beautiful glass-walled venue overlooking the lush greenery of Tagaytay.</p>
         </div>
     </div>
 </section>
 
-<section id="timeline" class="timeline-section">
-    <h1 class="timeline-title">WEDDING TIMELINE</h1>
+<!-- LOCATION -->
+<section id="location" class="container text-center py-5">
+    <h2 class="section-title">LOCATION</h2>
 
-    <div class="timeline-wrapper">
-        <div class="timeline-row">
-            <div class="tl-node">
-                <i data-lucide="circle-dot" class="tl-icon"></i>
-                <h3 class="tl-label">Ceremony</h3>
-                <p class="tl-time">3:30 PM</p>
+    <iframe 
+        src="https://www.google.com/maps?q=Palacio%20Cristal%20Del%20Aquila&output=embed"
+        width="100%" height="400" style="border:0;">
+    </iframe>
+</section>
+
+<!-- TIMELINE -->
+<section id="timeline" class="container py-5">
+    <h2 class="section-title text-center mb-5">WEDDING TIMELINE</h2>
+    
+    <div class="timeline-container">
+        <div class="row text-center mb-5">
+            <div class="col-md-4 mb-4 mb-md-0">
+                <i class="bi bi-arrow-through-heart timeline-icon"></i>
+                <h5 class="timeline-label">CEREMONY</h5>
+                <p class="timeline-time">3:30 PM</p>
             </div>
-
-            <div class="tl-connector"></div>
-
-            <div class="tl-node">
-                <i data-lucide="martini" class="tl-icon"></i>
-                <h3 class="tl-label">Photo Session & Cocktail</h3>
-                <p class="tl-time">4:30 PM</p>
+            
+            <div class="col-md-4 mb-4 mb-md-0">
+                <i class="bi bi-camera-reels timeline-icon"></i>
+                <h5 class="timeline-label">PHOTO SESSION & COCKTAIL</h5>
+                <p class="timeline-time">4:30 PM</p>
             </div>
-
-            <div class="tl-connector"></div>
-
-            <div class="tl-node" id="reception-node">
-                <i data-lucide="utensils" class="tl-icon"></i>
-                <h3 class="tl-label">Reception</h3>
-                <p class="tl-time">5:30 PM</p>
+            
+            <div class="col-md-4">
+                <i class="fa-solid fa-utensils timeline-icon"></i>
+                <h5 class="timeline-label">RECEPTION</h5>
+                <p class="timeline-time">5:30 PM</p>
             </div>
         </div>
 
-        <div class="curve-container">
-            <div class="vertical-line right"></div>
-            <div class="horizontal-line-back"></div>
-            <div class="vertical-line left"></div>
-        </div>
-
-        <div class="party-container">
-            <div class="tl-node party-node">
-                <i data-lucide="music" class="tl-icon large"></i>
-                <h3 class="tl-label">After Party</h3>
-                <p class="tl-time">8:30 PM</p>
+        <div class="row align-items-center mt-5">
+            <div class="col-md-4 text-center">
+                <i class="bi bi-music-note-beamed timeline-icon"></i>
+                <h5 class="timeline-label">AFTER PARTY</h5>
+                <p class="timeline-time">8:30 PM</p>
             </div>
-            <div class="party-text">
-                <p>Once the formal celebration wraps up, the real party begins. We have a DJ ready to spin the beats and drinks flowing as we turn up the energy for an unforgettable after party!</p>
+            <div class="col-md-8">
+                <div class="after-party-box">
+                    <p>Once the formal celebration wraps up, the real party begins. We have a DJ ready to spin the beats and drinks flowing as we turn up the energy for an unforgettable after party!</p>
+                </div>
             </div>
         </div>
     </div>
 </section>
+<!-- FAQ -->
+<section id="faqs" class="faq-section py-5 bg-light">
+  <div class="container">
+    <h2 class="faq-main-title text-center mb-5">FAQs</h2>
 
-<section id="faqs" class="faq-section">
-    <h2 class="faq-main-title">FAQs</h2>
-
-    <div class="faq-container">
-        <div class="faq-item">
-            <h3>Can I bring a plus-one?</h3>
+    <div class="accordion" id="faqAccordion">
+      <!-- FAQ Item 1 -->
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="faqHeading1">
+          <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#faq1" aria-expanded="true" aria-controls="faq1">
+            Can I bring a plus-one?
+          </button>
+        </h2>
+        <div id="faq1" class="accordion-collapse collapse show" aria-labelledby="faqHeading1" data-bs-parent="#faqAccordion">
+          <div class="accordion-body">
             <p>Unless we have personally confirmed a plus-one with you, we kindly ask that you refer to the number of seat(s) allotted on your invitation.</p>
             <p>As much as we would love to celebrate with everyone, our venue allows for a limited number of guests. We’ve chosen to keep our celebration intimate, surrounded by our families, close friends, and the people we know and love dearly.</p>
             <p>We truly appreciate your understanding and support in helping us make this day as special as possible. 💛</p>
+          </div>
         </div>
+      </div>
 
-        <div class="faq-item">
-            <h3>Can I bring my kid/s?</h3>
+      <!-- FAQ Item 2 -->
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="faqHeading2">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq2" aria-expanded="false" aria-controls="faq2">
+            Can I bring my kid/s?
+          </button>
+        </h2>
+        <div id="faq2" class="accordion-collapse collapse" aria-labelledby="faqHeading2" data-bs-parent="#faqAccordion">
+          <div class="accordion-body">
             <p>We absolutely adore your little ones! However, due to necessity rather than choice, we are only able to accommodate children who are part of the wedding entourage.</p>
             <p>We hope you understand and see this as an opportunity to enjoy a relaxed evening celebrating with us. Thank you so much for your understanding and support.</p>
+          </div>
         </div>
+      </div>
 
-        <div class="faq-item">
-            <h3>What is the best time to leave?</h3>
-            <p>We’ve spent so much time thoughtfully planning our special day, hoping it will be a celebration everyone can truly enjoy. We’d love for you to stay until the end of the program! 🎉</p>
+      <!-- FAQ Item 3 -->
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="faqHeading3">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq3" aria-expanded="false" aria-controls="faq3">
+            What is the best time to leave?
+          </button>
+        </h2>
+        <div id="faq3" class="accordion-collapse collapse" aria-labelledby="faqHeading3" data-bs-parent="#faqAccordion">
+          <div class="accordion-body">
+            <p>We’d love for you to stay until the end of the program! 🎉</p>
+          </div>
         </div>
+      </div>
 
-        <div class="faq-item">
-            <h3>Can I sit anywhere at the reception?</h3>
-            <p>We put a great deal of thought and care into finalizing the seating arrangements.</p>
+      <!-- FAQ Item 4 -->
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="faqHeading4">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq4" aria-expanded="false" aria-controls="faq4">
+            Can I sit anywhere at the reception?
+          </button>
+        </h2>
+        <div id="faq4" class="accordion-collapse collapse" aria-labelledby="faqHeading4" data-bs-parent="#faqAccordion">
+          <div class="accordion-body">
             <p>They have been thoughtfully planned with everyone’s comfort, connections, and group familiarity in mind — so there’s no need to worry. We hope this allows you to relax, enjoy the company around you, and fully celebrate with us.</p>
+          </div>
         </div>
+      </div>
 
-        <div class="faq-item">
-            <h3>I initially said no to RSVP, but had a change of plans and can attend now. What should I do?</h3>
+      <!-- FAQ Item 5 -->
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="faqHeading5">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq5" aria-expanded="false" aria-controls="faq5">
+            I initially said no to RSVP, but had a change of plans and can attend now. What should I do?
+          </button>
+        </h2>
+        <div id="faq5" class="accordion-collapse collapse" aria-labelledby="faqHeading5" data-bs-parent="#faqAccordion">
+          <div class="accordion-body">
             <p>Please let us know as soon as possible.</p>
             <p>That said, we kindly ask for your understanding, as we may have already reassigned your seat(s) to another guest. Because of this, we cannot guarantee the same number of seats — or availability at all.</p>
+          </div>
         </div>
+      </div>
 
-        <div class="faq-item">
-            <h3>I confirmed yes, but I can no longer attend.</h3>
+      <!-- FAQ Item 6 -->
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="faqHeading6">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq6" aria-expanded="false" aria-controls="faq6">
+            I confirmed yes, but I can no longer attend.
+          </button>
+        </h2>
+        <div id="faq6" class="accordion-collapse collapse" aria-labelledby="faqHeading6" data-bs-parent="#faqAccordion">
+          <div class="accordion-body">
             <p>We completely understand that such circumstances may arise. If your plans change, please let us know as soon as possible so we may offer your allotted seat(s) to other guest(s).</p>
+          </div>
         </div>
+      </div>
     </div>
 
-    <div class="gifts-section">
-        <div class="gifts-content">
-            <h2 class="gifts-title">NOTE<br>ON<br>GIFTS</h2>
-            <div class="gifts-text">
-                <p>If you’re thinking about giving us a gift, your presence at our wedding is already the greatest blessing we could ask for. But if you’d like to give something extra, a monetary gift would be deeply appreciated as we begin this new chapter of our lives together.</p>
-                <p>Thank you so much for your love and support! It truly means the world to us.</p>
+    <!-- Gifts Section -->
+    <div class="gifts-section mt-5 pt-5 border-top">
+      <div class="row justify-content-center align-items-start">
+        <div class="col-md-4 text-center text-md-start">
+          <h2 class="gifts-title">NOTE<br>ON<br>GIFTS</h2>
+        </div>
+        <div class="col-md-6">
+          <p>If you’re thinking about giving us a gift, your presence at our wedding is already the greatest blessing we could ask for. But if you’d like to give something extra, a monetary gift would be deeply appreciated as we begin this new chapter of our lives together.</p>
+          <p>Thank you so much for your love and support! It truly means the world to us.</p>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<section id="rsvp" class="container py-5 mt-5 mb-5">
+    <div class="rsvp-card">
+        <div class="row align-items-center">
+            <div class="col-md-4 text-center mb-4 mb-md-0">
+                <div class="qr-wrapper">
+                    <img src="rsvp.png" alt="Scan to RSVP" class="qr-img">
+                </div>
+            </div>
+            
+            <div class="col-md-8 text-center text-md-start">
+                <h2 class="rsvp-title">RSVP</h2>
+                <p class="rsvp-instruction">Click the button or scan the QR code to confirm your attendance.</p>
+                <a href="https://docs.google.com/forms/d/e/1FAIpQLSf_n713wtHmlMGE7HjahtY-8GYuGvhByGzv_Q7xk0n3DXoWxw/viewform" target="_blank" class="btn rsvp-btn">CONFIRM ATTENDANCE</a>
+                
+                <div class="deadline-box mt-4">
+                    <span class="deadline-label">DEADLINE:</span>
+                    <span class="deadline-date">MARCH 31, 2026</span>
+                </div>
             </div>
         </div>
     </div>
 </section>
 
-    <footer>
-        <p>© 2026 Allan & Ailyne. Happy Rd, Tagaytay City.</p>
-    </footer>
 
-    <script>
-        // Simple Smooth Scroll
-        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-            anchor.addEventListener('click', function (e) {
-                e.preventDefault();
-                document.querySelector(this.getAttribute('href')).scrollIntoView({
-                    behavior: 'smooth'
-                });
-            });
-        });
+<!-- FOOTER -->
+<footer class="text-center py-4">
+    <p>© 2026 Allan & Ailyne</p>
+</footer>
 
-        // Set the date we're counting down to (April 19, 2026, at 3:30 PM Philippine Time)
+<!-- Bootstrap JS -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+<!-- Countdown Script -->
+<script>
 const weddingDate = new Date("April 19, 2026 15:30:00 GMT+0800").getTime();
-
-const countdown = setInterval(function() {
+setInterval(() => {
     const now = new Date().getTime();
     const distance = weddingDate - now;
-
-    // Time calculations
-    const days = Math.floor(distance / (1000 * 60 * 60 * 24));
-    const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-    const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
-    const seconds = Math.floor((distance % (1000 * 60)) / 1000);
-
-    // Output the results
-    document.getElementById("days").innerHTML = days.toString().padStart(2, '0');
-    document.getElementById("hours").innerHTML = hours.toString().padStart(2, '0');
-    document.getElementById("minutes").innerHTML = minutes.toString().padStart(2, '0');
-    document.getElementById("seconds").innerHTML = seconds.toString().padStart(2, '0');
-
-    // If the count down is finished
-    if (distance < 0) {
-        clearInterval(countdown);
-        document.getElementById("countdown").innerHTML = "<p class='script-text' style='font-size: 2rem;'>Today is the Day!</p>";
-    }
+    document.getElementById("days").innerHTML = Math.floor(distance / (1000*60*60*24));
+    document.getElementById("hours").innerHTML = Math.floor((distance % (1000*60*60*24))/(1000*60*60));
+    document.getElementById("minutes").innerHTML = Math.floor((distance % (1000*60*60))/(1000*60));
+    document.getElementById("seconds").innerHTML = Math.floor((distance % (1000*60))/1000);
 }, 1000);
+</script>
 
-    // Initialize the icons
-    lucide.createIcons();
-
-    </script>
 </body>
 </html>
