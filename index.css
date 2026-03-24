@@ -521,6 +521,56 @@ section {
     }
 }
 
+/* Principal Sponsors - Formal List Design */
+.sponsors-title {
+    font-family: 'Cinzel', serif;
+    font-weight: 700;
+    font-size: 1.2rem;
+    color: var(--navy);
+    letter-spacing: 1px;
+}
+
+.sponsors-subtitle {
+    font-family: 'Great Vibes', cursive; /* Using Great Vibes if loaded, or other elegant script */
+    font-size: 2.5rem;
+    color: var(--navy);
+    margin-top: -10px; /* Pulls the script closer to the title */
+    opacity: 0.9;
+}
+
+.sponsor-list {
+    margin-top: 30px;
+}
+
+.sponsor-list p {
+    font-family: 'Montserrat', sans-serif; /* Formal serif or sans-serif for formal names */
+    font-size: 1.1rem;
+    color: #002D62;
+    margin-bottom: 8px; /* Tight line height like image_fde96b.png */
+    line-height: 1.2;
+}
+
+/* Specific alignment to mimic image_fde96b.png */
+@media (min-width: 768px) {
+    .sponsor-list .col-md-6:first-child {
+        text-align: right;
+        padding-right: 30px;
+        border-right: 1px solid rgba(0, 45, 98, 0.1); /* Optional: a very subtle divider line */
+    }
+    .sponsor-list .col-md-6:last-child {
+        text-align: left;
+        padding-left: 30px;
+    }
+}
+
+/* Small screen adjustment: Stacked & centered */
+@media (max-width: 767px) {
+    .sponsor-list p {
+        font-size: 1.1rem;
+        margin-bottom: 12px;
+    }
+}
+
 /* =========================================
    CUSTOM AESTHETIC SCROLLBAR
    ========================================= */
