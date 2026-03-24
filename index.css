@@ -381,3 +381,42 @@ section {
         font-size: 3rem;
     }
 }
+
+/* Frames exactly like image_f29b0a.png */
+.qr-frame-design {
+    border: 1.5px solid #002D62; /* Navy border */
+    padding: 15px; /* Creates the white spacing around the QR */
+    background-color: #FFFFFF;
+    display: inline-block;
+    margin-bottom: 15px;
+}
+
+.qr-frame-design img {
+    width: 160px; /* Standard size for easy scanning */
+    height: 160px;
+    display: block;
+}
+
+/* Label styling to match wedding theme */
+.nav-qr-label {
+    font-family: 'Cinzel', serif;
+    font-size: 0.85rem;
+    font-weight: 700;
+    letter-spacing: 2px;
+    color: #002D62;
+    margin-bottom: 15px;
+}
+
+.nav-app-link {
+    display: block;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 0.7rem;
+    font-weight: 600;
+    letter-spacing: 1.5px;
+    color: #002D62;
+    text-decoration: none;
+    border-bottom: 1px solid rgba(0, 45, 98, 0.3);
+    padding-bottom: 2px;
+    width: fit-content;
+    margin: 0 auto;
+}
