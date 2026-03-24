@@ -443,3 +443,91 @@ footer {
         padding-left: 0;
     }
 }
+
+.faq-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* This centers the container on the screen */
+    padding: 80px 10%;
+    background-color: #FDFBF7; /* Cream background */
+}
+
+.faq-main-title {
+    width: 100%;
+    max-width: 900px;
+    text-align: center; /* Keeps the "FAQs" title to the left */
+    font-family: 'Cinzel', serif;
+    font-size: 4rem;
+    color: #002D62; /* Navy blue */
+    margin-bottom: 50px;
+}
+
+.faq-container {
+    width: 100%;
+    max-width: 900px; /* Limits width for better readability */
+    text-align: left; /* Standard left-alignment for the Q&A text */
+}
+
+.faq-item h3 {
+    text-align: left;
+    margin-bottom: 10px;
+    font-weight: 700;
+}
+
+.faq-item p {
+    text-align: justify; /* This makes the edges of the paragraphs straight */
+    line-height: 1.6;
+    margin-bottom: 20px;
+    hyphens: auto; /* Optional: helps with spacing when justifying text */
+}
+
+/* Note on Gifts Specifics */
+.gifts-content {
+    display: flex;
+    justify-content: center; /* Centers the Gift section content */
+    align-items: flex-start;
+    max-width: 900px;
+    margin-top: 60px;
+    gap: 40px;
+}
+
+/* Note on Gifts Styling */
+.gifts-section {
+    margin-top: 100px;
+    border-top: 1px solid rgba(0, 45, 98, 0.1);
+    padding-top: 80px;
+}
+
+.gifts-content {
+    display: flex;
+    align-items: flex-start;
+    gap: 50px;
+}
+
+.gifts-title {
+    font-family: var(--font-serif);
+    font-size: 4rem;
+    line-height: 1.1;
+    letter-spacing: 3px;
+    min-width: 250px;
+    text-align: left;
+}
+
+.gifts-text {
+    text-align: left;
+}
+
+.gifts-text p {
+    font-size: 1.3rem;
+    font-weight: 300;
+    line-height: 1.6;
+    margin-bottom: 25px;
+}
+
+/* Mobile Responsiveness */
+@media (max-width: 768px) {
+    .faq-main-title { font-size: 3rem; }
+    .gifts-content { flex-direction: column; gap: 30px; }
+    .gifts-title { font-size: 3rem; }
+    .gifts-text p { font-size: 1.1rem; }
+}
