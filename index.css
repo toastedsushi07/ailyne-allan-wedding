@@ -520,3 +520,36 @@ section {
         text-align: center;
     }
 }
+
+/* =========================================
+   CUSTOM AESTHETIC SCROLLBAR
+   ========================================= */
+
+/* 1. Width of the scrollbar */
+::-webkit-scrollbar {
+    width: 8px;
+}
+
+/* 2. The Track (the background part) */
+::-webkit-scrollbar-track {
+    background: var(--cream); 
+}
+
+/* 3. The Handle (the draggable part) */
+::-webkit-scrollbar-thumb {
+    background: rgba(0, 45, 98, 0.2); /* Subtle Navy */
+    border-radius: 10px;
+    border: 2px solid var(--cream); /* Creates a 'floating' effect */
+    transition: all 0.3s ease;
+}
+
+/* 4. Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: var(--navy); /* Deep Navy on interaction */
+}
+
+/* Firefox Support */
+* {
+    scrollbar-width: thin;
+    scrollbar-color: rgba(0, 45, 98, 0.3) var(--cream);
+}
