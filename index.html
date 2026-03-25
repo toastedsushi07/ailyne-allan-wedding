@@ -19,7 +19,44 @@
 <link rel="stylesheet" href="index.css">
 
 </head>
+
+<script>
+window.addEventListener("load", () => {
+  const intro = document.getElementById("intro");
+  const envelope = document.querySelector(".envelope");
+
+  // Step 1: open flap
+  setTimeout(() => {
+    envelope.classList.add("open");
+  }, 500);
+
+  // Step 2: remove intro
+  setTimeout(() => {
+    intro.style.opacity = "0";
+  }, 2500);
+
+  setTimeout(() => {
+    intro.style.display = "none";
+  }, 3500);
+});
+</script>
+
+
 <body>
+
+  <div id="intro">
+  <div class="envelope">
+    
+    <div class="flap"></div>
+
+    <div class="letter">
+      <h2>You're Invited</h2>
+      <p>Allan & Ailyne</p>
+    </div>
+
+  </div>
+</div>
+
 
 <!-- NAVBAR -->
 <nav class="navbar navbar-expand-lg bg-white sticky-top border-bottom">
@@ -254,48 +291,64 @@
 </section>
 
 <section id="dresscode" class="dresscode-section">
-    <div class="container dresscode-wrapper">
-        <div class="row h-100 align-items-center">
-            
-            <div class="col-md-6 col-sm-12 left-motif text-center">
-                <h2 class="motif-title">Color Motif</h2>
-                <h3 class="all-guests-title mt-4">ALL GUESTS:</h3>
-                <h4 class="champagne-subtitle mb-4">Champagne Sunshine</h4>
-                
-                <div class="color-palette d-flex justify-content-center gap-3">
-                    <span class="color-swatch gold-1"></span>
-                    <span class="color-swatch gold-2"></span>
-                    <span class="color-swatch gold-3"></span>
-                    <span class="color-swatch gold-4"></span>
-                    <span class="color-swatch gold-5"></span>
-                </div>
-                
-                <p class="dresscode-text mt-4">We kindly ask that you follow our dress code theme and avoid wearing white.</p>
-            </div>
+    <div class="row h-100 align-items-center dresscode-flex">
 
-           <div class="col-md-6 col-sm-12 right-motif text-center">
-    <h3 class="sponsors-title mb-5">PRINCIPAL SPONSORS ONLY</h3>
-    
-    <div class="sponsor-group mb-5">
-        <p class="role-text mb-1">GENTLEMEN</p>
-        <p class="script-color mb-3">Black</p>
-        <div class="d-flex justify-content-center mb-3">
-            <span class="color-swatch sponsor-black"></span>
-        </div>
-        <p class="special-note">To male principal sponsors, We will provide your necktie on the day.</p>
+    <!-- LEFT IMAGE -->
+    <div class="col-lg-3 text-center dress-img-left">
+        <img src="motif1.png" class="dress-img" alt="Dress Sample Left">
     </div>
-    
-    <div class="sponsor-group">
-        <p class="role-text mb-1">LADIES</p>
-        <p class="script-color mb-3">Gray or Silver</p>
-        <div class="d-flex justify-content-center gap-2">
-            <span class="color-swatch sponsor-gray-light"></span>
-            <span class="color-swatch sponsor-gray-dark"></span>
+
+    <!-- LEFT CONTENT -->
+    <div class="col-lg-3 col-md-6 col-sm-12 left-motif text-center">
+        <h2 class="motif-title">Color Motif</h2>
+        <h3 class="all-guests-title mt-4">ALL GUESTS:</h3>
+        <h4 class="champagne-subtitle mb-4">Champagne Sunshine</h4>
+        
+        <div class="color-palette d-flex justify-content-center gap-3">
+            <span class="color-swatch gold-1"></span>
+            <span class="color-swatch gold-2"></span>
+            <span class="color-swatch gold-3"></span>
+            <span class="color-swatch gold-4"></span>
+            <span class="color-swatch gold-5"></span>
+        </div>
+
+        <p class="dresscode-text mt-4">
+            We kindly ask that you follow our dress code theme and avoid wearing white.
+        </p>
+    </div>
+
+    <!-- RIGHT CONTENT -->
+    <div class="col-lg-3 col-md-6 col-sm-12 right-motif text-center">
+        <h3 class="sponsors-title mb-5">PRINCIPAL SPONSORS ONLY</h3>
+        
+        <div class="sponsor-group mb-5">
+            <p class="role-text mb-1">GENTLEMEN</p>
+            <p class="script-color mb-3">Black</p>
+            <div class="d-flex justify-content-center mb-3">
+                <span class="color-swatch sponsor-black"></span>
+            </div>
+            <p class="special-note">
+                To male principal sponsors, We will provide your necktie on the day.
+            </p>
+        </div>
+
+        <div class="sponsor-group">
+            <p class="role-text mb-1">LADIES</p>
+            <p class="script-color mb-3">Gray or Silver</p>
+            <div class="d-flex justify-content-center gap-2">
+                <span class="color-swatch sponsor-gray-light"></span>
+                <span class="color-swatch sponsor-gray-dark"></span>
+            </div>
         </div>
     </div>
+
+    <!-- RIGHT IMAGE -->
+    <div class="col-lg-3 text-center dress-img-right">
+        <img src="motif2.png" class="dress-img" alt="Dress Sample Right">
+    </div>
+
 </div>
-        </div>
-    </div>
+
 </section>
 
 <!-- LOCATION -->
@@ -538,23 +591,6 @@ requestAnimationFrame(raf);
 }
 requestAnimationFrame(raf);
 
-// REVEAL
-function reveal(){
-document.querySelectorAll(".reveal").forEach(el=>{
-if(el.getBoundingClientRect().top < window.innerHeight - 120){
-el.classList.add("active");
-}
-});
-}
-window.addEventListener("scroll", reveal);
-reveal();
-
-
-const toggler = document.querySelector(".custom-toggler");
-
-toggler.addEventListener("click", () => {
-  toggler.classList.toggle("active");
-});
 
 </script>
 
