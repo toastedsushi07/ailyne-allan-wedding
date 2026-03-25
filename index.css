@@ -1237,3 +1237,81 @@ section.show {
 .days-left-text, #countdown span, #countdown p {
     color: #002d62; /* Your signature navy color */
 }
+
+/* Container for the overall overlap */
+.collage-transition-section {
+    padding: 100px 0;
+    overflow: visible; /* Required for the negative margin/overlap */
+}
+
+.collage-wrapper {
+    position: relative;
+    width: 100%;
+    max-width: 900px; /* A formal width */
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 500px; /* Base height on desktop */
+}
+
+/* Common Image Container Styles */
+.collage-item {
+    position: absolute;
+    width: 38%; /* Scaling width */
+    overflow: hidden;
+    line-height: 0;
+}
+
+.collage-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* Left Photo (Back, Maroon Border) */
+.collage-back {
+    left: 15%; /* Defines the horizontal start */
+    top: 0;
+    z-index: 1; /* Lowest z-index */
+    /* Using a fixed aspect ratio for desktop */
+    height: 120%; /* Taller on the y-axis */
+}
+
+/* Right Photo (Front, Thicker Black Border) */
+.collage-front {
+    right: 15%; /* Defines the horizontal start */
+    bottom: -15%; /* Defines the overlap on the y-axis */
+    z-index: 2; /* Sits in front */
+    height: 100%;
+}
+
+/* --- IMPROVED MOBILE RESPONSIVENESS --- */
+@media (max-width: 768px) {
+    /* Set a fixed height for the mobile container to prevent stacking */
+    .frames-container {
+        height: 480px; 
+        width: 100%;
+        display: block; /* Ensure it doesn't default to flex column */
+    }
+
+    /* Keep frames absolute so they can overlap */
+    .frame {
+        position: absolute; 
+        width: 65%; /* Make frames slightly larger on mobile */
+        padding-bottom: 90%; /* Taller aspect ratio for mobile */
+    }
+
+    /* Adjust the specific overlap coordinates for mobile screens */
+    .frame-top-left {
+        top: 0;
+        left: 5%;
+        z-index: 1;
+    }
+
+    .frame-bottom-right {
+        top: 30%; /* Pushes the black frame down to overlap */
+        left: 30%; /* Pushes the black frame right to overlap */
+        z-index: 2; /* Keeps black frame on top */
+    }
+}
