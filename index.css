@@ -499,7 +499,7 @@ section {
     .date-container {
         flex-direction: row !important; /* Forces side-by-side even on mobile */
         gap: 10px !important;
-        transform: scale(1.1); /* Slightly shrinks to fit narrow screens */
+        transform: scale(1); /* Slightly shrinks to fit narrow screens */
     }
 
     .date-side-line {
