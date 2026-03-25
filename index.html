@@ -81,15 +81,18 @@ window.addEventListener("load", () => {
 
 <!-- HERO -->
 <header id="home" class="text-center py-5 container">
-    <p class="sub-header">TOGETHER WITH THEIR FAMILIES</p>
-    <h1 class="main-names">ALLAN & AILYNE</h1>
-
+    
+  
     <div id="countdown" class="d-flex justify-content-center gap-4 my-4">
         <div><span id="days">00</span><p>Days</p></div>
         <div><span id="hours">00</span><p>Hours</p></div>
         <div><span id="minutes">00</span><p>Min</p></div>
         <div><span id="seconds">00</span><p>Sec</p></div>
     </div>
+  
+  <p class="sub-header">TOGETHER WITH THEIR FAMILIES</p>
+    <h1 class="main-names">ALLAN & AILYNE</h1>
+
 
     <div class="date-container">
             <div class="date-side-line">SUNDAY</div>
@@ -102,7 +105,7 @@ window.addEventListener("load", () => {
         </div>
 
     <p class="invite-text">Invites you to celebrate their wedding</p>
-    <h2 class="venue-name">PALACIO CRISTAL DEL AQUILA</h2>
+    <h2 class="venue-name"><strong>PALACIO CRISTAL DEL AQUILA</strong></h2>
     <p class="venue-address">Happy Rd, Kaybagal South, Tagaytay City</p>
 </header>
 
@@ -137,7 +140,7 @@ window.addEventListener("load", () => {
 
 <!-- ENTOURAGE -->
 <section id="entourage" class="container py-5 text-center">
-    <h2 class="section-title mb-5">THE ENTOURAGE</h2>
+    <h2 class="section-title mb-5"><strong>THE ENTOURAGE</strong></h2>
 
     <!-- Bride & Groom -->
     <div class="row mb-4">
@@ -290,6 +293,17 @@ window.addEventListener("load", () => {
 
 </section>
 
+<div class="transition-photo-with-text container-fluid p-0">
+    <div class="transition-wrapper">
+        <img src="attire.jpg" alt="Allan and Ailyne" class="transition-engagement-img-zoomed">
+        
+        <div class="transition-text-container">
+            <p class="script-invite">We invite you to dress in harmony with the color motif below</p>
+            <p class="serif-subtext">TO DRESS WELL IS TO SHOW REGARD FOR THE MOMENT</p>
+        </div>
+    </div>
+</div>
+
 <section id="dresscode" class="dresscode-section">
     <div class="row h-100 align-items-center dresscode-flex">
 
@@ -352,11 +366,11 @@ window.addEventListener("load", () => {
 </section>
 
 <!-- LOCATION -->
-<section id="location" class="container text-center py-5"> <h2 class="section-title">LOCATION</h2>
+<section id="location" class="container text-center py-5"> <h2 class="section-title"><strong>LOCATION</strong></h2>
 
     <div class="mb-5">
         <p class="invite-text mb-1">SUNDAY, 19 APR 2026 / 3:30 PM</p>
-        <h3 class="venue-name mb-1">PALACIO CRISTAL DEL AQUILA</h3>
+        <h3 class="venue-name mb-1"><strong>PALACIO CRISTAL DEL AQUILA</strong></h3>
         <p class="venue-address">Happy Rd, Kaybagal South, Tagaytay City</p>
     </div>
 
@@ -386,7 +400,7 @@ window.addEventListener("load", () => {
 
 <!-- TIMELINE -->
 <section id="timeline" class="container py-5">
-    <h2 class="section-title text-center mb-5">WEDDING TIMELINE</h2>
+    <h2 class="section-title text-center mb-5"><strong>WEDDING TIMELINE</strong></h2>
     
     <div class="timeline-container">
         <div class="row text-center mb-5">
@@ -426,7 +440,7 @@ window.addEventListener("load", () => {
 <!-- FAQ -->
 <section id="faqs" class="faq-section py-5 bg-light">
   <div class="container">
-    <h2 class="faq-main-title text-center mb-5">FAQs</h2>
+    <h2 class="faq-main-title text-center mb-5"><strong>FAQs</strong></h2>
 
     <div class="accordion" id="faqAccordion">
       <!-- FAQ Item 1 -->
@@ -558,6 +572,16 @@ window.addEventListener("load", () => {
     </div>
 </section>
 
+<div class="container-fluid p-0 mt-5">
+    <div class="footer-photo-wrapper">
+        <img src="save.jpg" alt="Allan and Ailyne" class="footer-engagement-img">
+        
+        <div class="save-date-overlay-frame">
+            <img src="savetext.png" alt="Save the Date" class="save-date-script-img">
+        </div>
+    </div>
+</div>
+
 
 <!-- FOOTER -->
 <footer class="text-center py-4">
@@ -609,6 +633,16 @@ window.addEventListener("load", () => {
   }, 3000);
 });
 
+const sections = document.querySelectorAll("section");
+
+window.addEventListener("scroll", () => {
+  sections.forEach(sec => {
+    const top = sec.getBoundingClientRect().top;
+    if (top < window.innerHeight - 100) {
+      sec.classList.add("show");
+    }
+  });
+});
 
 
 </script>

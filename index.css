@@ -853,3 +853,138 @@ section {
 .open .letter {
   bottom: 0;
 }
+
+/* Container for the photo and text */
+.footer-photo-wrapper {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0; /* Removes tiny gaps under images */
+}
+
+.footer-engagement-img {
+    width: 100%;
+    height: auto;
+    display: block;
+    object-fit: cover;
+}
+
+/* Position the Text Frame exactly like image_7d16be.jpg */
+.save-date-overlay-frame {
+    position: absolute;
+    right: 5%;         /* Pins it to the right side */
+    top: 50%;          /* Vertical center */
+    transform: translateY(-50%); 
+    width: 35%;        /* Scaling size for the text */
+    z-index: 10;
+}
+
+.save-date-script-img {
+    width: 100%;
+    height: auto;
+    /* Optional: Slight shadow for readability against the photo */
+    filter: drop-shadow(0 4px 8px rgba(0,0,0,0.15));
+}
+
+/* Mobile Adjustments */
+@media (max-width: 768px) {
+    .save-date-overlay-frame {
+        width: 50%;    /* Slightly larger text on small screens */
+        right: 3%;
+    }
+}
+
+/* Transition Photo Styling (No Text Overlay) */
+.transition-photo-wrapper {
+    width: 100%;
+    max-height: 450px; /* Slightly shorter than the footer version for a tighter transition */
+    overflow: hidden;
+    line-height: 0;
+}
+
+.transition-engagement-img {
+    width: 100%;
+    height: 600px; /* Matches the wrapper height on desktop */
+    object-fit: cover;
+    object-position: center 50%; /* Keeps your faces perfectly framed */
+    display: block;
+}
+
+@media (min-width: 992px) {
+    .transition-engagement-img {
+        height: 750px; /* Much taller to accommodate the full boat/body shot */
+        object-position: center center; 
+    }
+    .transition-photo-wrapper {
+        max-height: 750px;
+    }
+}
+
+/* Mobile Adjustments */
+@media (max-width: 768px) {
+    .transition-photo-wrapper, 
+    .transition-engagement-img {
+        max-height: none;
+        height: auto; /* Allows the full photo to show on phones */
+    }
+}
+
+
+section {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: all 0.8s ease;
+}
+
+section.show {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Transition Section: Principal Sponsors to Dress Code */
+.transition-photo-with-text {
+    width: 100%;
+    background-color: var(--cream); /* Matches your body background */
+}
+
+.transition-engagement-img-zoomed {
+    width: 100%;
+    height: 700px; /* High-definition height for desktop */
+    object-fit: cover;
+    object-position: center 30%; /* Focuses on the couple and the skyline */
+    display: block;
+}
+
+.transition-text-container {
+    padding: 40px 0;
+    text-align: center;
+}
+
+.script-invite {
+    font-family: 'Great Vibes', cursive; /* Matches your motif titles */
+    color: var(--navy);
+    font-size: 2.2rem;
+    margin-bottom: 5px;
+}
+
+.serif-subtext {
+    font-family: 'Cinzel', serif; /* Matches your section titles */
+    color: var(--navy);
+    font-size: 0.9rem;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    opacity: 0.8;
+}
+
+/* Mobile Adjustments for this specific section */
+@media (max-width: 768px) {
+    .transition-engagement-img-zoomed {
+        height: auto; /* Allows the full HD photo to show on phones */
+    }
+    .script-invite {
+        font-size: 1.8rem;
+    }
+    .serif-subtext {
+        font-size: 0.75rem;
+    }
+}
