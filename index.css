@@ -1154,3 +1154,37 @@ section.show {
     .qr-pov-img { width: 200px; height: 200px; }
     .pov-list li { font-size: 0.9rem; }
 }
+
+/* New Transition Header (Top Text) */
+.transition-attire-header { /* Matches the white background in the ref */
+    padding-bottom: 0;
+}
+
+.script-attire {
+    font-family: 'Great Vibes', cursive; /* Elegant cursive from image_16.png */
+    color: var(--navy); /* soft, thematic navy blue */
+    font-size: 5rem; /* Large and dominant */
+    margin-bottom: -15px; /* Pulls "Strictly Formal" text closer */
+}
+
+.formal-serif {
+    font-family: 'Cinzel', serif; /* Matching your main headers */
+    color: var(--navy);
+    letter-spacing: 5px; /* Wide, high-end look from ref */
+    font-size: 1.5rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    line-height: 1.2;
+}
+
+/* Mobile Tweak for Headers */
+@media (max-width: 768px) {
+    .script-attire {
+        font-size: 3.5rem;
+        margin-bottom: -10px;
+    }
+    .formal-serif {
+        font-size: 1.1rem;
+        letter-spacing: 3px;
+    }
+}
