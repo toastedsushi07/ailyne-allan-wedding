@@ -155,7 +155,6 @@ footer {
 /* DRESS CODE RECREATION STYLES */
 
 .dresscode-section {
-    padding: 100px 0; /* Ensures space above and below the design */
     background-color: var(--cream);
     position: relative;
     overflow: hidden;
@@ -417,39 +416,60 @@ section {
 }
 
 /* Wedding Details Styling */
+/* Enhanced Date Container */
 .date-container {
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 20px;
-    margin: 30px 0;
+    gap: 30px; /* Increased gap for a more breathable look */
+    margin: 40px 0;
 }
 
 .date-side-line {
-    font-size: 0.8rem;
-    letter-spacing: 2px;
-    border-top: 1px solid var(--navy);
-    border-bottom: 1px solid var(--navy);
-    padding: 10px 0;
-    min-width: 120px;
+    font-family: 'Cinzel', serif;
+    font-size: 1.1rem; /* Bigger side text */
+    letter-spacing: 3px;
+    border-top: 1.5px solid var(--navy); /* Slightly thicker lines */
+    border-bottom: 1.5px solid var(--navy);
+    padding: 12px 0;
+    min-width: 160px; /* Wider lines to balance the big date */
 }
 
 .date-center {
     display: flex;
     flex-direction: column;
     color: var(--navy);
-    line-height: 1;
+    line-height: 0.9;
 }
 
-.date-center .month, .date-center .year {
-    font-size: 0.8rem;
-    letter-spacing: 3px;
+.date-center .month, 
+.date-center .year {
+    font-size: 1.1rem; /* Matching the side-line text size */
+    letter-spacing: 5px;
+    font-weight: 600;
 }
 
 .date-center .day {
-    font-size: 3rem;
+    font-size: 5rem; /* Massive, elegant focal point */
     font-weight: 400;
-    margin: 5px 0;
+    margin: 10px 0;
+}
+
+/* Mobile Responsiveness for the Bigger Date */
+@media (max-width: 768px) {
+    .date-container {
+        gap: 15px;
+        transform: scale(0.85); /* Scales the whole unit down to fit mobile screens */
+    }
+    
+    .date-side-line {
+        min-width: 100px;
+        font-size: 0.8rem;
+    }
+
+    .date-center .day {
+        font-size: 3.5rem;
+    }
 }
 
 .venue-address {
@@ -479,7 +499,7 @@ section {
     .date-container {
         flex-direction: row !important; /* Forces side-by-side even on mobile */
         gap: 10px !important;
-        transform: scale(0.9); /* Slightly shrinks to fit narrow screens */
+        transform: scale(1.1); /* Slightly shrinks to fit narrow screens */
     }
 
     .date-side-line {
@@ -987,4 +1007,73 @@ section.show {
     .serif-subtext {
         font-size: 0.75rem;
     }
+}
+
+/* Refined Aesthetic Header */
+.countdown-header {
+    text-align: center;
+}
+
+.days-left-text {
+    font-family: 'Cinzel', serif;
+    color: var(--navy);
+    letter-spacing: 4px;
+    font-size: 1.2rem; /* Slightly smaller but bolder is more elegant */
+    font-weight: 700;
+    text-transform: uppercase;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+.script-i-do {
+    font-family: 'Great Vibes', cursive;
+    font-size: 4.5rem; /* Large but delicate */
+    color: var(--navy);
+    font-weight: 400; /* Cursive often looks "thick" and "shit" when forced bold */
+    text-transform: none;
+    line-height: 0.8;
+    margin-top: 10px; /* Sits slightly lower for a signature feel */
+    text-shadow: 2px 2px 4px rgba(0, 45, 98, 0.05); /* Very subtle depth */
+}
+
+/* Polished Countdown Grid */
+#countdown {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    margin-top: 20px;
+}
+
+#countdown .time-unit {
+    text-align: center;
+    min-width: 60px;
+}
+
+#countdown span {
+    font-family: 'Cinzel', serif;
+    font-size: 2.5rem;
+    font-weight: 500;
+    color: var(--navy);
+    display: block;
+    line-height: 1;
+}
+
+#countdown .label {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 0.7rem;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-top: 8px;
+    opacity: 0.6;
+}
+
+/* Mobile Polish */
+@media (max-width: 768px) {
+    .days-left-text { font-size: 0.9rem; gap: 10px; }
+    .script-i-do { font-size: 3rem; }
+    #countdown { gap: 20px; }
+    #countdown span { font-size: 1.8rem; }
 }
