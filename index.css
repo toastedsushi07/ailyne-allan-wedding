@@ -1077,3 +1077,80 @@ section.show {
     #countdown { gap: 20px; }
     #countdown span { font-size: 1.8rem; }
 }
+
+/* POV Section Styling */
+.pov-container {
+    background-color: #FFFFFF;
+    border: 1px solid rgba(0, 45, 98, 0.1);
+    border-radius: 4px;
+    box-shadow: 0 5px 20px rgba(0, 45, 98, 0.05);
+}
+
+.pov-title {
+    font-family: 'Cinzel', serif;
+    color: var(--navy);
+    font-size: 2.5rem;
+    font-weight: 700;
+    letter-spacing: 2px;
+    margin-bottom: 0;
+}
+
+.pov-subtitle {
+    font-family: 'Montserrat', sans-serif;
+    color: var(--navy);
+    font-size: 1.1rem;
+    letter-spacing: 1px;
+}
+
+.pov-list {
+    list-style: none;
+    padding-left: 0;
+}
+
+.pov-list li {
+    font-family: 'Montserrat', sans-serif;
+    color: var(--navy);
+    font-size: 1rem;
+    margin-bottom: 8px;
+    position: relative;
+    padding-left: 25px;
+}
+
+/* Custom Bullet Points */
+.pov-list li::before {
+    content: "•";
+    position: absolute;
+    left: 0;
+    color: #B27C4B; /* Using the gold hue from your motif */
+    font-size: 1.5rem;
+    line-height: 1;
+}
+
+.pov-footer-text, .pov-social-text {
+    font-family: 'Montserrat', sans-serif;
+    color: var(--navy);
+    font-size: 0.95rem;
+    margin-bottom: 5px;
+}
+
+/* QR Code Display */
+.qr-pov-wrapper {
+    display: inline-block;
+    padding: 10px;
+    background: white;
+    border: 2px solid var(--navy);
+}
+
+.qr-pov-img {
+    width: 250px;
+    height: 250px;
+    display: block;
+    object-fit: contain;
+}
+
+/* Mobile Adjustments */
+@media (max-width: 768px) {
+    .pov-title { font-size: 1.8rem; }
+    .qr-pov-img { width: 200px; height: 200px; }
+    .pov-list li { font-size: 0.9rem; }
+}
