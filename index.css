@@ -125,7 +125,7 @@ footer {
 
 .after-party-box {
     padding-left: 30px;
-    border-left: 1px solid rgba(0, 45, 98, 0.15); /* Very subtle vertical separator */
+    border-left: 1px solid rgba(0, 45, 98, 0.15);
     font-size: 0.9rem;
     line-height: 1.7;
     color: var(--navy);
@@ -142,11 +142,11 @@ footer {
 }
 
 .timeline-icon {
-    font-size: 2rem; /* Slightly larger for Font Awesome */
+    font-size: 2rem; 
     color: var(--navy);
     display: block;
     margin-bottom: 15px;
-    height: 40px; /* Ensures vertical alignment is even */
+    height: 40px; 
     display: flex;
     justify-content: center;
     align-items: center;
@@ -163,20 +163,17 @@ footer {
 .dresscode-wrapper {
     max-width: 1000px;
     margin: 0 auto;
-    
-    padding: 60px; /* Space inside the border */
+    padding: 60px; 
     position: relative;
-    
-    /* Using the image as the background for the entire section */
     background-image: url('border.png');
-    background-size: cover; /* Important: makes the image fill the box */
+    background-size: cover; 
     background-position: center;
     background-repeat: no-repeat;
 }
 
 /* Typography to match image */
 .motif-title {
-    font-family: 'Great Vibes', cursive; /* Using the other font from your CSS */
+    font-family: 'Great Vibes', cursive; 
     color: var(--navy);
     font-size: 3.5rem;
 }
@@ -206,7 +203,7 @@ footer {
     height: 40px;
     border-radius: 50%;
     display: inline-block;
-    border: 1px solid rgba(0, 45, 98, 0.1); /* Subtle definition */
+    border: 1px solid rgba(0, 45, 98, 0.1); 
 }
 
 /* Guest Colors (Extracted from image) */
@@ -224,7 +221,7 @@ footer {
 /* Desktop-only positioning */
 @media (min-width: 992px) {
     .left-motif {
-        border-right: 1px dotted rgba(0, 45, 98, 0.4); /* Replicates the center dot line */
+        border-right: 1px dotted rgba(0, 45, 98, 0.4); 
         padding-right: 50px;
     }
     .right-motif {
@@ -250,7 +247,7 @@ footer {
 .sponsor-group {
     display: flex;
     flex-direction: column;
-    align-items: center; /* Centers everything in the stack */
+    align-items: center; 
     margin-bottom: 40px;
 }
 
@@ -265,17 +262,16 @@ footer {
 .script-color {
     font-family: 'Great Vibes', cursive;
     font-size: 2.2rem;
-    line-height: 1; /* Tightens the gap between text and circles */
+    line-height: 1; 
 }
 
 .special-note {
-    max-width: 250px; /* Keeps the note from getting too wide */
+    max-width: 250px; 
     font-size: 0.9rem;
     opacity: 1;
     margin-top: 10px;
 }
 
-/* Make circles slightly bigger to match the screenshot better */
 .color-swatch {
     width: 45px;
     height: 45px;
@@ -284,13 +280,13 @@ footer {
 }
 
 section {
-    scroll-margin-top: 100px; /* Adjust this number to match the actual height of your navbar */
+    scroll-margin-top: 100px; 
 }
 
 /* RSVP SECTION STYLES */
 
 .rsvp-card {
-    background: #fff; /* Slight contrast from the cream background */
+    background: #fff;
     border: 1px solid rgba(0, 45, 98, 0.1);
     padding: 50px;
     border-radius: 2px;
@@ -317,7 +313,6 @@ section {
     font-weight: 700;
     margin-bottom: 10px;
     letter-spacing: 5px;
-    /* Navy to Gold gradient to match your motif */
     background: linear-gradient(to right, var(--navy), #B27C4B);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -338,12 +333,12 @@ section {
     font-size: 0.8rem;
     font-weight: 600;
     letter-spacing: 2px;
-    border-radius: 0; /* Keep it sharp and formal */
+    border-radius: 0;
     transition: all 0.3s ease;
 }
 
 .rsvp-btn:hover {
-    background-color: #B27C4B; /* Golden hue from your motif */
+    background-color: #B27C4B;
     color: white;
     transform: translateY(-2px);
 }
@@ -354,7 +349,7 @@ section {
 }
 
 .deadline-label {
-    color: #d9534f; /* Subtle red for urgency */
+    color: #d9534f;
     font-weight: 700;
     letter-spacing: 1px;
     margin-right: 10px;
@@ -366,7 +361,6 @@ section {
     color: var(--navy);
 }
 
-/* Mobile Tweak */
 @media (max-width: 768px) {
     .rsvp-card {
         padding: 30px 20px;
@@ -376,22 +370,20 @@ section {
     }
 }
 
-/* Frames exactly like image_f29b0a.png */
 .qr-frame-design {
-    border: 1.5px solid #002D62; /* Navy border */
-    padding: 15px; /* Creates the white spacing around the QR */
+    border: 1.5px solid #002D62;
+    padding: 15px;
     background-color: #FFFFFF;
     display: inline-block;
     margin-bottom: 15px;
 }
 
 .qr-frame-design img {
-    width: 160px; /* Standard size for easy scanning */
+    width: 160px;
     height: 160px;
     display: block;
 }
 
-/* Label styling to match wedding theme */
 .nav-qr-label {
     font-family: 'Cinzel', serif;
     font-size: 0.85rem;
@@ -415,24 +407,22 @@ section {
     margin: 0 auto;
 }
 
-/* Wedding Details Styling */
-/* Enhanced Date Container */
 .date-container {
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 30px; /* Increased gap for a more breathable look */
+    gap: 30px;
     margin: 40px 0;
 }
 
 .date-side-line {
     font-family: 'Cinzel', serif;
-    font-size: 1.1rem; /* Bigger side text */
+    font-size: 1.1rem;
     letter-spacing: 3px;
-    border-top: 1.5px solid var(--navy); /* Slightly thicker lines */
+    border-top: 1.5px solid var(--navy);
     border-bottom: 1.5px solid var(--navy);
     padding: 12px 0;
-    min-width: 160px; /* Wider lines to balance the big date */
+    min-width: 160px;
 }
 
 .date-center {
@@ -444,22 +434,21 @@ section {
 
 .date-center .month, 
 .date-center .year {
-    font-size: 1.1rem; /* Matching the side-line text size */
+    font-size: 1.1rem;
     letter-spacing: 5px;
     font-weight: 600;
 }
 
 .date-center .day {
-    font-size: 5rem; /* Massive, elegant focal point */
+    font-size: 5rem;
     font-weight: 400;
     margin: 10px 0;
 }
 
-/* Mobile Responsiveness for the Bigger Date */
 @media (max-width: 768px) {
     .date-container {
         gap: 15px;
-        transform: scale(0.85); /* Scales the whole unit down to fit mobile screens */
+        transform: scale(0.85);
     }
     
     .date-side-line {
@@ -489,21 +478,19 @@ section {
    MOBILE FIDELITY ADJUSTMENTS
    ========================================= */
 @media (max-width: 768px) {
-    /* Keeps the "Allan & Ailyne" title prominent but fitting */
     .main-names {
         font-size: 2.2rem !important;
         margin: 15px 0 !important;
     }
 
-    /* Fixes the Date Grid for Mobile */
     .date-container {
-        flex-direction: row !important; /* Forces side-by-side even on mobile */
+        flex-direction: row !important;
         gap: 10px !important;
-        transform: scale(1); /* Slightly shrinks to fit narrow screens */
+        transform: scale(1);
     }
 
     .date-side-line {
-        min-width: 80px !important; /* Shorter lines for mobile */
+        min-width: 80px !important;
         font-size: 0.65rem !important;
         padding: 5px 0 !important;
     }
@@ -512,7 +499,6 @@ section {
         font-size: 2.5rem !important;
     }
 
-    /* Venue & Address Spacing */
     .venue-name {
         font-size: 1.1rem !important;
         padding: 0 15px;
@@ -523,20 +509,17 @@ section {
         margin-bottom: 20px;
     }
 
-    /* Reception Script - Matches image_ff4dee.png */
     .script-footer {
         font-size: 2.2rem !important;
     }
 
-    /* Principal Sponsors Mobile Spacing */
     .sponsor-list p {
-        margin-bottom: 12px !important; /* Slightly tighter for mobile scrolling */
+        margin-bottom: 12px !important; 
         font-size: 1.1rem !important;
         text-align: center;
     }
 }
 
-/* Principal Sponsors - Formal List Design */
 .sponsors-title {
     font-family: 'Cinzel', serif;
     font-weight: 700;
@@ -546,10 +529,10 @@ section {
 }
 
 .sponsors-subtitle {
-    font-family: 'Great Vibes', cursive; /* Using Great Vibes if loaded, or other elegant script */
+    font-family: 'Great Vibes', cursive;
     font-size: 2rem;
     color: var(--navy);
-    margin-top: -10px; /* Pulls the script closer to the title */
+    margin-top: -10px;
     opacity: 0.9;
 }
 
@@ -558,19 +541,18 @@ section {
 }
 
 .sponsor-list p {
-    font-family: 'Montserrat', sans-serif; /* Formal serif or sans-serif for formal names */
+    font-family: 'Montserrat', sans-serif;
     font-size: 1.1rem;
     color: #002D62;
-    margin-bottom: 8px; /* Tight line height like image_fde96b.png */
+    margin-bottom: 8px;
     line-height: 1.2;
 }
 
-/* Specific alignment to mimic image_fde96b.png */
 @media (min-width: 768px) {
     .sponsor-list .col-md-6:first-child {
         text-align: right;
         padding-right: 30px;
-        border-right: 1px solid rgba(0, 45, 98, 0.1); /* Optional: a very subtle divider line */
+        border-right: 1px solid rgba(0, 45, 98, 0.1);
     }
     .sponsor-list .col-md-6:last-child {
         text-align: left;
@@ -578,7 +560,6 @@ section {
     }
 }
 
-/* Small screen adjustment: Stacked & centered */
 @media (max-width: 767px) {
     .sponsor-list p {
         font-size: 1.1rem;
@@ -586,40 +567,30 @@ section {
     }
 }
 
-/* =========================================
-   CUSTOM AESTHETIC SCROLLBAR
-   ========================================= */
-
-/* 1. Width of the scrollbar */
 ::-webkit-scrollbar {
     width: 8px;
 }
 
-/* 2. The Track (the background part) */
 ::-webkit-scrollbar-track {
     background: var(--cream); 
 }
 
-/* 3. The Handle (the draggable part) */
 ::-webkit-scrollbar-thumb {
-    background: rgba(0, 45, 98, 0.2); /* Subtle Navy */
+    background: rgba(0, 45, 98, 0.2);
     border-radius: 10px;
-    border: 2px solid var(--cream); /* Creates a 'floating' effect */
+    border: 2px solid var(--cream);
     transition: all 0.3s ease;
 }
 
-/* 4. Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
-    background: var(--navy); /* Deep Navy on interaction */
+    background: var(--navy);
 }
 
-/* Firefox Support */
 * {
     scrollbar-width: thin;
     scrollbar-color: rgba(0, 45, 98, 0.3) var(--cream);
 }
 
-/* Custom Thin Scrollbar */
 ::-webkit-scrollbar {
   width: 6px;
 }
@@ -629,7 +600,7 @@ section {
 }
 
 ::-webkit-scrollbar-thumb {
-  background: #002d62; /* Matches your Navy theme */
+  background: #002d62;
   border-radius: 10px;
 }
 
@@ -638,7 +609,7 @@ section {
 }
 
 .gifts-title {
-    font-family: 'Cinzel', serif; /* Matching your header style */
+    font-family: 'Cinzel', serif;
     color: var(--navy);
     text-align: center;
     margin-bottom: 20px;
@@ -646,8 +617,8 @@ section {
 
 @media (max-width: 768px) {
     .gifts-title {
-        white-space: nowrap; /* Prevents text from breaking into 3 lines */
-        font-size: 1.2rem;    /* Adjusted size to ensure it fits the mobile width */
+        white-space: nowrap;
+        font-size: 1.2rem;
         letter-spacing: 2px;
     }
 }
@@ -699,7 +670,6 @@ section {
   left: 100%;
 }
 
-/* Smooth mobile menu */
 .navbar-collapse {
   transition: all 0.4s ease;
 }
@@ -797,9 +767,9 @@ section {
     .dresscode-text {
         font-size: 0.85rem;
         line-height: 1.6;
-        max-width: 280px;       /* limits width for readability */
-        margin: 15px auto 0;    /* centers it nicely */
-        padding: 0 10px;        /* breathing space */
+        max-width: 280px;
+        margin: 15px auto 0;
+        padding: 0 10px;       
         text-align: center;
     }
 }
@@ -874,12 +844,11 @@ section {
   bottom: 0;
 }
 
-/* Container for the photo and text */
 .footer-photo-wrapper {
     position: relative;
     width: 100%;
     overflow: hidden;
-    line-height: 0; /* Removes tiny gaps under images */
+    line-height: 0;
 }
 
 .footer-engagement-img {
@@ -889,50 +858,46 @@ section {
     object-fit: cover;
 }
 
-/* Position the Text Frame exactly like image_7d16be.jpg */
 .save-date-overlay-frame {
     position: absolute;
-    right: 5%;         /* Pins it to the right side */
-    top: 50%;          /* Vertical center */
+    right: 5%;
+    top: 50%;
     transform: translateY(-50%); 
-    width: 35%;        /* Scaling size for the text */
+    width: 35%;
     z-index: 10;
 }
 
 .save-date-script-img {
     width: 100%;
     height: auto;
-    /* Optional: Slight shadow for readability against the photo */
     filter: drop-shadow(0 4px 8px rgba(0,0,0,0.15));
 }
 
-/* Mobile Adjustments */
 @media (max-width: 768px) {
     .save-date-overlay-frame {
-        width: 50%;    /* Slightly larger text on small screens */
+        width: 50%;
         right: 3%;
     }
 }
 
-/* Transition Photo Styling (No Text Overlay) */
 .transition-photo-wrapper {
     width: 100%;
-    max-height: 450px; /* Slightly shorter than the footer version for a tighter transition */
+    max-height: 450px;
     overflow: hidden;
     line-height: 0;
 }
 
 .transition-engagement-img {
     width: 100%;
-    height: 600px; /* Matches the wrapper height on desktop */
+    height: 600px;
     object-fit: cover;
-    object-position: center 50%; /* Keeps your faces perfectly framed */
+    object-position: center 50%;
     display: block;
 }
 
 @media (min-width: 992px) {
     .transition-engagement-img {
-        height: 750px; /* Much taller to accommodate the full boat/body shot */
+        height: 750px;
         object-position: center center; 
     }
     .transition-photo-wrapper {
@@ -945,7 +910,7 @@ section {
     .transition-photo-wrapper, 
     .transition-engagement-img {
         max-height: none;
-        height: auto; /* Allows the full photo to show on phones */
+        height: auto;
     }
 }
 
@@ -964,14 +929,14 @@ section.show {
 /* Transition Section: Principal Sponsors to Dress Code */
 .transition-photo-with-text {
     width: 100%;
-    background-color: var(--cream); /* Matches your body background */
+    background-color: var(--cream);
 }
 
 .transition-engagement-img-zoomed {
     width: 100%;
-    height: 700px; /* High-definition height for desktop */
+    height: 700px;
     object-fit: cover;
-    object-position: center 30%; /* Focuses on the couple and the skyline */
+    object-position: center 30%;
     display: block;
 }
 
@@ -981,14 +946,14 @@ section.show {
 }
 
 .script-invite {
-    font-family: 'Great Vibes', cursive; /* Matches your motif titles */
+    font-family: 'Great Vibes', cursive;
     color: var(--navy);
     font-size: 2.2rem;
     margin-bottom: 5px;
 }
 
 .serif-subtext {
-    font-family: 'Cinzel', serif; /* Matches your section titles */
+    font-family: 'Cinzel', serif;
     color: var(--navy);
     font-size: 0.9rem;
     letter-spacing: 2px;
@@ -996,10 +961,9 @@ section.show {
     opacity: 0.8;
 }
 
-/* Mobile Adjustments for this specific section */
 @media (max-width: 768px) {
     .transition-engagement-img-zoomed {
-        height: auto; /* Allows the full HD photo to show on phones */
+        height: auto;
     }
     .script-invite {
         font-size: 1.8rem;
@@ -1018,7 +982,7 @@ section.show {
     font-family: 'Cinzel', serif;
     color: var(--navy);
     letter-spacing: 4px;
-    font-size: 1.2rem; /* Slightly smaller but bolder is more elegant */
+    font-size: 1.2rem;
     font-weight: 700;
     text-transform: uppercase;
     display: flex;
@@ -1030,13 +994,13 @@ section.show {
 
 .script-i-do {
     font-family: 'Great Vibes', cursive;
-    font-size: 4.5rem; /* Large but delicate */
+    font-size: 4.5rem;
     color: var(--navy);
-    font-weight: 400; /* Cursive often looks "thick" and "shit" when forced bold */
+    font-weight: 400;
     text-transform: none;
     line-height: 0.8;
-    margin-top: 10px; /* Sits slightly lower for a signature feel */
-    text-shadow: 2px 2px 4px rgba(0, 45, 98, 0.05); /* Very subtle depth */
+    margin-top: 10px;
+    text-shadow: 2px 2px 4px rgba(0, 45, 98, 0.05);
 }
 
 /* Polished Countdown Grid */
@@ -1121,7 +1085,7 @@ section.show {
     content: "•";
     position: absolute;
     left: 0;
-    color: #B27C4B; /* Using the gold hue from your motif */
+    color: #B27C4B;
     font-size: 1.5rem;
     line-height: 1;
 }
@@ -1155,29 +1119,27 @@ section.show {
     .pov-list li { font-size: 0.9rem; }
 }
 
-/* New Transition Header (Top Text) */
-.transition-attire-header { /* Matches the white background in the ref */
+.transition-attire-header { 
     padding-bottom: 0;
 }
 
 .script-attire {
-    font-family: 'Great Vibes', cursive; /* Elegant cursive from image_16.png */
-    color: var(--navy); /* soft, thematic navy blue */
-    font-size: 5rem; /* Large and dominant */
-    margin-bottom: -15px; /* Pulls "Strictly Formal" text closer */
+    font-family: 'Great Vibes', cursive;
+    color: var(--navy);
+    font-size: 5rem;
+    margin-bottom: -15px;
 }
 
 .formal-serif {
-    font-family: 'Cinzel', serif; /* Matching your main headers */
+    font-family: 'Cinzel', serif;
     color: var(--navy);
-    letter-spacing: 5px; /* Wide, high-end look from ref */
+    letter-spacing: 5px;
     font-size: 1.5rem;
     font-weight: 700;
     text-transform: uppercase;
     line-height: 1.2;
 }
 
-/* Mobile Tweak for Headers */
 @media (max-width: 768px) {
     .script-attire {
         font-size: 3.5rem;
@@ -1193,7 +1155,7 @@ section.show {
     position: relative;
     width: 100%;
     max-width: 1100px; 
-    height: 400px; /* Increased from 250px to 400px for a larger look */
+    height: 400px;
     margin: 0 auto 50px auto;
     border-radius: 20px;
     overflow: hidden;
@@ -1208,9 +1170,6 @@ section.show {
     width: 100%;
     height: 100%;
     object-fit: cover;
-    
-    /* ADD THIS LINE: This pushes the photo down to show the top/middle part */
-    /* Use 'center 20%' to show more of the heads/upper bodies */
     object-position: center 70%; 
     
     z-index: 1;
@@ -1224,8 +1183,8 @@ section.show {
     width: 100%;
     height: 100%;
     z-index: 2;
-    background-color: rgba(255, 255, 255, 0.35); /* Slightly clearer to see the people */
-    backdrop-filter: blur(2px); /* Reduced blur slightly so figures are more recognizable */
+    background-color: rgba(255, 255, 255, 0.35);
+    backdrop-filter: blur(2px);
     -webkit-backdrop-filter: blur(6px);
     display: flex;
     flex-direction: column;
@@ -1235,30 +1194,30 @@ section.show {
 
 /* Text Colors for Contrast */
 .days-left-text, #countdown span, #countdown p {
-    color: #002d62; /* Your signature navy color */
+    color: #002d62;
 }
 
 /* Container for the overall overlap */
 .collage-transition-section {
     padding: 100px 0;
-    overflow: visible; /* Required for the negative margin/overlap */
+    overflow: visible;
 }
 
 .collage-wrapper {
     position: relative;
     width: 100%;
-    max-width: 900px; /* A formal width */
+    max-width: 900px;
     margin: 0 auto;
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 500px; /* Base height on desktop */
+    height: 500px;
 }
 
 /* Common Image Container Styles */
 .collage-item {
     position: absolute;
-    width: 38%; /* Scaling width */
+    width: 38%;
     overflow: hidden;
     line-height: 0;
 }
@@ -1269,7 +1228,7 @@ section.show {
     object-fit: cover;
 }
 
-/* Left Photo (Back, Maroon Border) */
+
 .collage-back {
     left: 15%; /* Defines the horizontal start */
     top: 0;

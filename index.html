@@ -15,16 +15,13 @@
 
 <title>The Wedding of Allan & Ailyne</title>
 
-<!-- Google Fonts -->
 <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&family=Great+Vibes&family=Montserrat:wght@300;400;600&display=swap" rel="stylesheet">
 
-<!-- Bootstrap -->
 <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
 <script src="https://unpkg.com/@studio-freight/lenis@1.0.33/dist/lenis.min.js"></script>
 
-<!-- Custom CSS -->
 <link rel="stylesheet" href="index.css">
 
 </head>
@@ -34,12 +31,10 @@ window.addEventListener("load", () => {
   const intro = document.getElementById("intro");
   const envelope = document.querySelector(".envelope");
 
-  // Step 1: open flap
   setTimeout(() => {
     envelope.classList.add("open");
   }, 500);
 
-  // Step 2: remove intro
   setTimeout(() => {
     intro.style.opacity = "0";
   }, 2500);
@@ -672,7 +667,7 @@ window.addEventListener("load", () => {
 
 <!-- Countdown Script -->
 <script>
-// COUNTDOWN (UNCHANGED)
+
 const weddingDate = new Date("April 19, 2026 15:30:00").getTime();
 
 setInterval(()=>{
@@ -685,7 +680,6 @@ minutes.innerHTML = Math.floor((d%(1000*60*60))/(1000*60));
 seconds.innerHTML = Math.floor((d%(1000*60))/1000);
 },1000);
 
-// LENIS
 const lenis = new Lenis({ duration: 1.2 });
 
 function raf(time){
@@ -699,7 +693,6 @@ window.addEventListener("load", () => {
   const intro = document.getElementById("intro");
   const envelope = document.querySelector(".envelope");
 
-  // Start animation ONLY when everything is loaded
   envelope.classList.add("open");
 
   setTimeout(() => {
@@ -708,7 +701,7 @@ window.addEventListener("load", () => {
 
   setTimeout(() => {
     intro.style.display = "none";
-    document.body.classList.add("loaded"); // optional
+    document.body.classList.add("loaded");
   }, 3000);
 });
 
